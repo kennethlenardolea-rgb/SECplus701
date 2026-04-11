@@ -150,11 +150,11 @@ vlan 10
 vlan 50
    name IPCCTVLAN
 vlan 69
-   name UPPERMGMT
+   name SOC-L1-HIPUAN
 vlan 70
-    name ACCOUNTING
+    name SOC-L2-IWASHIPO
 vlan 71
-    name HR
+    name SOC-L3-DILAAN
 vlan 100
    name VOICEVLAN
 Int Fa 0/2
@@ -189,10 +189,10 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.31.50.6 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0709.c26b
 ip dhcp pool CAMERA8
 host 10.31.50.8 255.255.255.0
-client-identifier abcd.1234.cafb
+client-identifier 001a.0706.c2f7
 end
 show ip dhcp binding
 
